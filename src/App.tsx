@@ -5,6 +5,7 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="App">
+      <div>Test</div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +22,6 @@ const App: React.FC = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
