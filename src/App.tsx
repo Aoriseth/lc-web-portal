@@ -7,7 +7,7 @@ import {createStyles, IconButton, Theme} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-// import MenuIcon from '@material-ui/icons';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -28,11 +28,14 @@ const App: React.FC = () => {
     const classes = useStyles();
 
   return (
+
     <div className="App">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       <div>Test</div>
         <AppBar><Toolbar>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                {/*<MenuIcon />*/}
+                <MenuIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
                 Main
